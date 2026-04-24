@@ -1,0 +1,10 @@
+services:
+  claude-work:
+    build: .
+    container_name: claude-work-ping
+    restart: unless-stopped
+    environment:
+      TZ: ${TZ:-America/Detroit}
+      NOTIFY_URL: ${NOTIFY_URL:-}
+    volumes:
+      - ${CLAUDE_WORK_AUTH:-./claude-auth}:/root/.claude

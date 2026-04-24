@@ -1,0 +1,5 @@
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+HOME=/root
+
+0 6 * * * echo "ping" | claude --print >> /var/log/claude-ping.log 2>&1

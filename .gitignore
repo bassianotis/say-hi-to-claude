@@ -1,0 +1,4 @@
+.env
+claude-auth/
+*.log
+.DS_Store
