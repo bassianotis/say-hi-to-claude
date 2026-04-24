@@ -27,7 +27,7 @@ cd say-hi-to-claude
 
 # 2. Copy and edit the environment file.
 cp .env.example .env
-# Confirm TZ is correct for your locale. Default: America/Detroit.
+# Set TZ to your local IANA timezone (the example defaults to UTC).
 
 # 3. Build and start.
 make build
